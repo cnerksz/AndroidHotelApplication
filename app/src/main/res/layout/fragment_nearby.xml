@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.home.nearby.NearbyFragment">
+
+ 
+ <fragment
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/map"
+     android:name="com.google.android.gms.maps.SupportMapFragment"/>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     >
+
+  <ImageButton
+      android:id="@+id/hospitals_nearby"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="70dp"
+      android:src="@mipmap/hospital"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <ImageButton
+      android:id="@+id/historical_nearby"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/historical"
+
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="170dp"
+      tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+  <ImageButton
+      android:id="@+id/entertainment"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="270dp"
+      android:src="@mipmap/entertainment"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+
+ </RelativeLayout>
+</FrameLayout>

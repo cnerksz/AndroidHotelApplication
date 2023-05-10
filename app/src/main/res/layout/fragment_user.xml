@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.UserFragment">
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="With guest acces,you can benefit from hotel services.You can perform room service and reception services using our application."
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="If you do not know your guest user information,please contact to reception."
+            android:textColor="@color/pink"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Doğum tarihinizi giriniz."
+            android:inputType="datetime"
+            android:textColor="@color/purple_500"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/signInBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomNumber"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/skipBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Geç"
+            android:textColor="@color/pink"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="Kullanıcı adınızı giriniz."
+            android:inputType="textPersonName"
+            android:textColor="@color/purple_500"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/roomNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warning"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/roomNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:ems="10"
+            android:hint="Oda numaranızı giriniz."
+            android:inputType="number"
+            android:textColor="@color/purple_500"
+            app:layout_constraintBottom_toTopOf="@+id/signInBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warning"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="Giriş Yap"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/skipBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
